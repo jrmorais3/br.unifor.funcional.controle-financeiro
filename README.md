@@ -1,19 +1,47 @@
-# Financial
 
-To start your Phoenix server:
+<h1 style="display: flex; align-items: center; justify-content: center;" class="logo">
+  Controle Financeiro
+</h1>
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+&nbsp;
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+<h1 align="center">
+    <img src="https://ik.imagekit.io/rcjzrqiiqm7/52029_3442297a497ea4dcbfa32e37ed44726e-740x740_KIbVrMXYRH.jpg?updatedAt=1634589631318" width="200">
+</h1>
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+<h4 align="center">
+	Status 🚀 Em desenvolvimento  ☑️
+</h4>
 
-## Learn more
+# Índice
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+- [Sobre](#-sobre)
+- [Equipe](#-equipe)
+- [Requisitos](#-requisitos)
+
+&nbsp;
+
+## 🔖 Sobre
+
+---
+
+O aplicativo de controle financeiro foi criado para controles de despesas pessoais, através do registro segmentado de receitas e despesas.
+
+&nbsp;
+
+## ⚔️ Equipe
+
+Francisco Apoliano de Morais Junior
+&nbsp;
+
+Jackson Douglas
+
+&nbsp;
+
+## ⚙️ Requisitos
+---
+&nbsp;
+
+#### Requisito 1: Armazenamento de dados em um banco de dados PostgreSQL;
+#### Requisito 2: Permissão de criação, edição, listagem e exclusão de receitas e despesas;
+#### Requisito 3: Layout customizado baseado em bootstrap;
