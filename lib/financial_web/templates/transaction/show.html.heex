@@ -1,0 +1,31 @@
+<header class="container main-header" >
+  <h1>
+    Detalhes do lançamento
+  </h1>
+</header>
+
+
+<div class="container">
+<ul class="transaction-details">
+
+  <li>
+    <strong>Nome:</strong>
+    <%= @transaction.name %>
+  </li>
+
+  <li>
+    <strong>Valor:</strong>
+    <%= @transaction.price %>
+  </li>
+
+  <li>
+    <strong>Tipo:</strong>
+    <%= @transaction.type %>
+  </li>
+
+</ul>
+
+<span><%= link "Editar", to: Routes.transaction_path(@conn, :edit, @transaction), class: "btn btn-warning" %></span> |
+<span><%= link "Back", to: Routes.transaction_path(@conn, :index), class: "btn btn-light" %></span>
+
+</div>

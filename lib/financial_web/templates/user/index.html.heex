@@ -1,0 +1,36 @@
+<header class="container main-header" >
+  <h1>
+    Usuários
+  </h1>
+</header>
+
+<div class="container">
+<div class="line-control">
+<span><%= link "Novo Usuário", to: Routes.user_path(@conn, :new), class: "btn btn-info" %></span>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for user <- @users do %>
+    <tr>
+      <td><%= user.name %></td>
+      <td><%= user.age %></td>
+
+      <td>
+        <span><%= link "Detalhes", to: Routes.user_path(@conn, :show, user), class: "btn btn-primary btn-sm" %></span>
+        <span><%= link "Editar", to: Routes.user_path(@conn, :edit, user), class: "btn btn-warning btn-sm" %></span>
+        <span><%= link "Excluir", to: Routes.user_path(@conn, :delete, user), method: :delete, data: [confirm: "Tem certeza que deseja excluir o lançamento?"], class: "btn btn-danger btn-sm" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+</div>
+<span><%= link "New User", to: Routes.user_path(@conn, :new) %></span>

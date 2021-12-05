@@ -1,0 +1,25 @@
+<header class="container main-header" >
+  <h1>
+    Detalhes do usuário
+  </h1>
+</header>
+
+<div class="container">
+<ul class="transaction-details">
+
+  <li>
+    <strong>Name:</strong>
+    <%= @user.name %>
+  </li>
+
+  <li>
+    <strong>Age:</strong>
+    <%= @user.age %>
+  </li>
+
+</ul>
+
+<span><%= link "Editar", to: Routes.user_path(@conn, :edit, @user), class: "btn btn-warning"  %></span> |
+<span><%= link "Back", to: Routes.user_path(@conn, :index), class: "btn btn-light" %></span>
+
+</div>

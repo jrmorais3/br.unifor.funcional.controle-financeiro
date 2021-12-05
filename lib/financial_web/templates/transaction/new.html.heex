@@ -1,0 +1,10 @@
+<header class="container main-header" >
+  <h1>
+    Novo Lançamento
+  </h1>
+</header>
+
+
+<%= render "form.html", Map.put(assigns, :action, Routes.transaction_path(@conn, :create)) %>
+
+<span><%= link "Back", to: Routes.transaction_path(@conn, :index), class: "btn btn-light" %></span>
